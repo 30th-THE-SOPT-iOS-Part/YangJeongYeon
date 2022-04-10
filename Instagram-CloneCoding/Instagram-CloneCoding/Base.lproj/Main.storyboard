@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yua-2w-5rD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
+                                <connections>
+                                    <action selector="tapLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKh-q9-h8Q"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTd-j8-L4i">
                                 <rect key="frame" x="111.5" y="530" width="191.5" height="32"/>
@@ -70,6 +73,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="가입하기">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapSignupBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Op-iV-7uC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -93,15 +99,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0wG-Ch-MkK"/>
+                    <connections>
+                        <outlet property="usernameTextField" destination="RsG-r0-yPC" id="g0f-MJ-pdO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942.02898550724649" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--First Signup View Controller-->
         <scene sceneID="W2c-zV-wiG">
             <objects>
-                <viewController id="8Sd-rT-QRb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstSignupViewController" id="8Sd-rT-QRb" customClass="FirstSignupViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlQ-d6-1hA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,6 +149,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="tapNextBtn:" destination="8Sd-rT-QRb" eventType="touchUpInside" id="ZS3-Ix-dCk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Shj-lk-ORh"/>
@@ -156,15 +168,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D6W-qo-CUY"/>
+                    <connections>
+                        <outlet property="usernameTextField" destination="bB0-Gy-7di" id="jbo-xa-hLH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5A-Wl-CYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Signup View Controller-->
         <scene sceneID="S6Z-2r-4Mf">
             <objects>
-                <viewController id="9wI-gJ-wmA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondSignupViewController" id="9wI-gJ-wmA" customClass="SecondSignupViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HzI-Oy-59k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,6 +218,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="tapNextBtn:" destination="9wI-gJ-wmA" eventType="touchUpInside" id="E3L-bj-cDh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pjb-Hm-gbk"/>
@@ -219,15 +237,16 @@
                             <constraint firstItem="J9N-1p-EVD" firstAttribute="centerX" secondItem="HzI-Oy-59k" secondAttribute="centerX" id="xYU-ym-gse"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1Il-QZ-rj1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTJ-mS-wFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2504" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="owK-fP-5vj">
             <objects>
-                <viewController id="0u1-9P-cMp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="0u1-9P-cMp" customClass="WelcomeViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ygg-pD-FMl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,6 +276,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="완료하기"/>
+                                        <connections>
+                                            <action selector="tapFinishBtn:" destination="0u1-9P-cMp" eventType="touchUpInside" id="6Vi-oY-H24"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -268,6 +290,9 @@
                             <constraint firstItem="yui-c6-swI" firstAttribute="centerX" secondItem="Ygg-pD-FMl" secondAttribute="centerX" id="YfA-Sb-v88"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="weS-sE-MIw" id="qA6-eo-gLo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hi-cM-TnJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776A2802DB9D0039FB86 /* LoginViewController.swift */; };
+		DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */; };
+		DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */; };
+		DD5177712802DC460039FB86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5177702802DC460039FB86 /* WelcomeViewController.swift */; };
 		DD94D6C927FFF2000079FB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94D6C827FFF2000079FB81 /* AppDelegate.swift */; };
 		DD94D6CB27FFF2000079FB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94D6CA27FFF2000079FB81 /* SceneDelegate.swift */; };
 		DD94D6CD27FFF2000079FB81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94D6CC27FFF2000079FB81 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD51776A2802DB9D0039FB86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignupViewController.swift; sourceTree = "<group>"; };
+		DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupViewController.swift; sourceTree = "<group>"; };
+		DD5177702802DC460039FB86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DD94D6C527FFF2000079FB81 /* Instagram-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94D6C827FFF2000079FB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD94D6CA27FFF2000079FB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 				DD94D6CA27FFF2000079FB81 /* SceneDelegate.swift */,
 				DD94D6CC27FFF2000079FB81 /* ViewController.swift */,
 				DD94D6CE27FFF2000079FB81 /* Main.storyboard */,
+				DD5177702802DC460039FB86 /* WelcomeViewController.swift */,
+				DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */,
+				DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */,
+				DD51776A2802DB9D0039FB86 /* LoginViewController.swift */,
 				DD94D6D127FFF2010079FB81 /* Assets.xcassets */,
 				DD94D6D327FFF2010079FB81 /* LaunchScreen.storyboard */,
 				DD94D6D627FFF2010079FB81 /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */,
 				DD94D6CD27FFF2000079FB81 /* ViewController.swift in Sources */,
 				DD94D6C927FFF2000079FB81 /* AppDelegate.swift in Sources */,
 				DD94D6CB27FFF2000079FB81 /* SceneDelegate.swift in Sources */,
+				DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */,
+				DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */,
+				DD5177712802DC460039FB86 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
