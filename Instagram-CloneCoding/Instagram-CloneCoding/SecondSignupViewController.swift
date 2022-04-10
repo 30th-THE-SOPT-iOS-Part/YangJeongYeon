@@ -8,6 +8,8 @@
 import UIKit
 
 class SecondSignupViewController: UIViewController {
+    
+    var username: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,8 @@ class SecondSignupViewController: UIViewController {
 
     @IBAction func tapNextBtn(_ sender: Any) {
         guard let welcomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
+        
+        welcomeViewController.username = username
         
         self.present(welcomeViewController, animated: true, completion: nil)
     }
