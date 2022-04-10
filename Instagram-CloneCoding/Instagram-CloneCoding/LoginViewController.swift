@@ -10,10 +10,21 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginBtn.isEnabled = false
 
+        [usernameTextField, passwordTextField].forEach({ $0?.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
+    }
+    
+    @objc func editingChanged(_ textField: UITextField) {
+        loginBtn.isEnabled = ![usernameTextField, passwordTextField].compactMap {
+                $0.text?.isEmpty
+            }.contains(true)
     }
     
     @IBAction func tapLoginBtn(_ sender: Any) {

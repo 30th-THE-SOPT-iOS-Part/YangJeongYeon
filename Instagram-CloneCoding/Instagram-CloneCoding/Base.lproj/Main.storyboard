@@ -100,6 +100,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="0wG-Ch-MkK"/>
                     <connections>
+                        <outlet property="loginBtn" destination="M7b-dO-cp9" id="PkK-mx-ySc"/>
+                        <outlet property="passwordTextField" destination="qDl-Gc-rPa" id="TzD-HD-eOK"/>
                         <outlet property="usernameTextField" destination="RsG-r0-yPC" id="g0f-MJ-pdO"/>
                     </connections>
                 </viewController>
@@ -169,6 +171,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="D6W-qo-CUY"/>
                     <connections>
+                        <outlet property="nextBtn" destination="W0z-H3-OOo" id="UjY-Ql-5eF"/>
                         <outlet property="usernameTextField" destination="bB0-Gy-7di" id="jbo-xa-hLH"/>
                     </connections>
                 </viewController>
@@ -238,6 +241,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Il-QZ-rj1"/>
+                    <connections>
+                        <outlet property="nextBtn" destination="qW0-Wb-Pg2" id="nUm-k2-Cch"/>
+                        <outlet property="passwordTextField" destination="Usc-jD-paP" id="qwo-ZX-dAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTJ-mS-wFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

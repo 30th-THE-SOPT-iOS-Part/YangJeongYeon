@@ -10,10 +10,18 @@ import UIKit
 class FirstSignupViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var nextBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+        nextBtn.isEnabled = false
+        
+        usernameTextField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+    }
+    
+    @objc func editingChanged(_ textField: UITextField) {
+        nextBtn.isEnabled = !(usernameTextField.text?.isEmpty ?? true)
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
