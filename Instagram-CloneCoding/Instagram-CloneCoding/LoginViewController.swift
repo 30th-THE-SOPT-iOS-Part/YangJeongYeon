@@ -17,10 +17,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tapLoginBtn(_ sender: Any) {
+        guard let welcomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
+        
+        welcomeViewController.username = usernameTextField.text
+        
+        self.present(welcomeViewController, animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
+    @IBAction func tapSignupBtn(_ sender: Any) {
+        guard let firstSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "FirstSignupViewController") as? FirstSignupViewController else { return }
+        self.present(firstSigupViewController, animated: true, completion: nil)
     }
 }
