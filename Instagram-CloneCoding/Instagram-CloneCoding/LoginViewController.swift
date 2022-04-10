@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tapSignupBtn(_ sender: Any) {
-        guard let firstSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "FirstSignupViewController") as? FirstSignupViewController else { return }
-        self.present(firstSigupViewController, animated: true, completion: nil)
+        guard let firstSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "FirstSignupViewController") else { return }
+        self.navigationController?.pushViewController(firstSigupViewController, animated: true)
     }
 }

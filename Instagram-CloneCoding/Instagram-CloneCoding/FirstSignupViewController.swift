@@ -17,6 +17,8 @@ class FirstSignupViewController: UIViewController {
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
+        guard let secondSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondSignupViewController") else { return }
+        self.navigationController?.pushViewController(secondSigupViewController, animated: true)
     }
     
 }

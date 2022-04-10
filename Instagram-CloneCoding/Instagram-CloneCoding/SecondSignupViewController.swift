@@ -15,6 +15,9 @@ class SecondSignupViewController: UIViewController {
     }    
 
     @IBAction func tapNextBtn(_ sender: Any) {
+        guard let welcomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
+        
+        self.present(welcomeViewController, animated: true, completion: nil)
     }
     
 }
