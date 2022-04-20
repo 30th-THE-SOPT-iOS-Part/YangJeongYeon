@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-Rq-Zv9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icn_lock" translatesAutoresizingMaskIntoConstraints="NO" id="iWw-2L-OGj">
+                                <rect key="frame" x="170" y="106" width="36" height="36"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3B-ED-ZXz">
+                                <rect key="frame" x="101" y="152" width="174" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4월 9일 토요일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t07-uw-2Ur">
+                                <rect key="frame" x="121" y="242" width="133" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4x-Mb-etC">
+                                <rect key="frame" x="33" y="15" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R4x-Mb-etC" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="15" id="4qL-Xn-aGQ"/>
+                            <constraint firstItem="iWw-2L-OGj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="170" id="6SE-Z6-LUb"/>
+                            <constraint firstItem="iWw-2L-OGj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="89u-AB-wum"/>
+                            <constraint firstItem="t07-uw-2Ur" firstAttribute="top" secondItem="r3B-ED-ZXz" secondAttribute="bottom" constant="6" id="9tr-FH-l6r"/>
+                            <constraint firstItem="zEL-Rq-Zv9" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="FDJ-yz-4PM"/>
+                            <constraint firstItem="R4x-Mb-etC" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="33" id="Pe5-CZ-wMy"/>
+                            <constraint firstItem="r3B-ED-ZXz" firstAttribute="top" secondItem="iWw-2L-OGj" secondAttribute="bottom" constant="10" id="VbR-9f-Cok"/>
+                            <constraint firstItem="t07-uw-2Ur" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="121" id="x43-Os-YXb"/>
+                            <constraint firstItem="r3B-ED-ZXz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="101" id="xsJ-Xo-EFP"/>
+                            <constraint firstItem="zEL-Rq-Zv9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zOF-wc-cha"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_lock" width="36" height="36"/>
+        <image name="img_bg" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
