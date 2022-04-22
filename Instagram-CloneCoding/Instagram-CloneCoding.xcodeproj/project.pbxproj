@@ -17,6 +17,7 @@
 		DD4020E628126883003FABC6 /* ReelsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E528126883003FABC6 /* ReelsTab.storyboard */; };
 		DD4020E82812688A003FABC6 /* ShopTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E72812688A003FABC6 /* ShopTab.storyboard */; };
 		DD4020EA281268B1003FABC6 /* UserTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E9281268B1003FABC6 /* UserTab.storyboard */; };
+		DD4020EE28127943003FABC6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4020ED28127943003FABC6 /* MainTabBarController.swift */; };
 		DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776A2802DB9D0039FB86 /* LoginViewController.swift */; };
 		DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */; };
 		DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */; };
@@ -39,6 +40,7 @@
 		DD4020E528126883003FABC6 /* ReelsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReelsTab.storyboard; sourceTree = "<group>"; };
 		DD4020E72812688A003FABC6 /* ShopTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopTab.storyboard; sourceTree = "<group>"; };
 		DD4020E9281268B1003FABC6 /* UserTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTab.storyboard; sourceTree = "<group>"; };
+		DD4020ED28127943003FABC6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DD51776A2802DB9D0039FB86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignupViewController.swift; sourceTree = "<group>"; };
 		DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				DD4020E528126883003FABC6 /* ReelsTab.storyboard */,
 				DD4020E72812688A003FABC6 /* ShopTab.storyboard */,
 				DD4020E9281268B1003FABC6 /* UserTab.storyboard */,
+				DD4020ED28127943003FABC6 /* MainTabBarController.swift */,
 			);
 			path = MainTabBar;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */,
 				DD94D6C927FFF2000079FB81 /* AppDelegate.swift in Sources */,
 				DD94D6CB27FFF2000079FB81 /* SceneDelegate.swift in Sources */,
+				DD4020EE28127943003FABC6 /* MainTabBarController.swift in Sources */,
 				DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */,
 				DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */,
 				DD5177712802DC460039FB86 /* WelcomeViewController.swift in Sources */,
