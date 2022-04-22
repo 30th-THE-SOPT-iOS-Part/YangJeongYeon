@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second Signup View Controller-->
+        <scene sceneID="vv9-c2-RhR">
+            <objects>
+                <viewController storyboardIdentifier="SecondSignupViewController" id="DLh-3W-ZBR" customClass="SecondSignupViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hd-pR-idr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R80-Zt-cpG">
+                                <rect key="frame" x="125" y="100" width="164" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 정보를 입력하지 않아도 됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okl-rC-nZc">
+                                <rect key="frame" x="54" y="142" width="306" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="dA9-2q-ofa"/>
+                                    <constraint firstAttribute="height" constant="57" id="oCh-bM-6Jn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2er-lD-4Fb">
+                                <rect key="frame" x="57" y="217" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Rth-NL-71d"/>
+                                    <constraint firstAttribute="height" constant="44" id="yOM-Lt-giA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryv-UE-L5x">
+                                <rect key="frame" x="57" y="281" width="300" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="EAb-ax-zdR"/>
+                                    <constraint firstAttribute="height" constant="44" id="ZiA-xj-zHI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="tapNextBtn:" destination="DLh-3W-ZBR" eventType="touchUpInside" id="2md-wi-ZdC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pq2-rL-kXw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2er-lD-4Fb" firstAttribute="top" secondItem="okl-rC-nZc" secondAttribute="bottom" constant="18" id="6bA-rK-pDh"/>
+                            <constraint firstItem="R80-Zt-cpG" firstAttribute="centerX" secondItem="1hd-pR-idr" secondAttribute="centerX" id="LxS-nG-pYP"/>
+                            <constraint firstItem="okl-rC-nZc" firstAttribute="centerX" secondItem="1hd-pR-idr" secondAttribute="centerX" id="MLg-Bi-qOt"/>
+                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="leading" secondItem="2er-lD-4Fb" secondAttribute="leading" id="PFW-uk-G2X"/>
+                            <constraint firstItem="okl-rC-nZc" firstAttribute="centerX" secondItem="2er-lD-4Fb" secondAttribute="centerX" id="ckE-pU-T0O"/>
+                            <constraint firstItem="R80-Zt-cpG" firstAttribute="top" secondItem="pq2-rL-kXw" secondAttribute="top" constant="56" id="egi-bk-fNj"/>
+                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="centerX" secondItem="1hd-pR-idr" secondAttribute="centerX" id="neR-OE-O0f"/>
+                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="top" secondItem="2er-lD-4Fb" secondAttribute="bottom" constant="20" id="pQt-j5-c9q"/>
+                            <constraint firstItem="okl-rC-nZc" firstAttribute="top" secondItem="R80-Zt-cpG" secondAttribute="bottom" constant="10" id="sSI-WI-td9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nqW-7z-MRt"/>
+                    <connections>
+                        <outlet property="nextBtn" destination="Ryv-UE-L5x" id="jOD-5S-DS4"/>
+                        <outlet property="passwordTextField" destination="2er-lD-4Fb" id="6qH-bn-FQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziR-kw-GPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
