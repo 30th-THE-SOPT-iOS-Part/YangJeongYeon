@@ -11,6 +11,12 @@
 		DD4020D9281244F7003FABC6 /* FirstSignupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020D8281244F7003FABC6 /* FirstSignupViewController.storyboard */; };
 		DD4020DB28124501003FABC6 /* SecondSignupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020DA28124501003FABC6 /* SecondSignupViewController.storyboard */; };
 		DD4020DD2812450B003FABC6 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020DC2812450B003FABC6 /* WelcomeViewController.storyboard */; };
+		DD4020E028125C00003FABC6 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020DF28125C00003FABC6 /* MainTabBar.storyboard */; };
+		DD4020E228125C3D003FABC6 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E128125C3D003FABC6 /* HomeTab.storyboard */; };
+		DD4020E428125F6D003FABC6 /* FindTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E328125F6D003FABC6 /* FindTab.storyboard */; };
+		DD4020E628126883003FABC6 /* ReelsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E528126883003FABC6 /* ReelsTab.storyboard */; };
+		DD4020E82812688A003FABC6 /* ShopTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E72812688A003FABC6 /* ShopTab.storyboard */; };
+		DD4020EA281268B1003FABC6 /* UserTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E9281268B1003FABC6 /* UserTab.storyboard */; };
 		DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776A2802DB9D0039FB86 /* LoginViewController.swift */; };
 		DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */; };
 		DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */; };
@@ -27,6 +33,12 @@
 		DD4020D8281244F7003FABC6 /* FirstSignupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstSignupViewController.storyboard; sourceTree = "<group>"; };
 		DD4020DA28124501003FABC6 /* SecondSignupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondSignupViewController.storyboard; sourceTree = "<group>"; };
 		DD4020DC2812450B003FABC6 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		DD4020DF28125C00003FABC6 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		DD4020E128125C3D003FABC6 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		DD4020E328125F6D003FABC6 /* FindTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindTab.storyboard; sourceTree = "<group>"; };
+		DD4020E528126883003FABC6 /* ReelsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReelsTab.storyboard; sourceTree = "<group>"; };
+		DD4020E72812688A003FABC6 /* ShopTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopTab.storyboard; sourceTree = "<group>"; };
+		DD4020E9281268B1003FABC6 /* UserTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTab.storyboard; sourceTree = "<group>"; };
 		DD51776A2802DB9D0039FB86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignupViewController.swift; sourceTree = "<group>"; };
 		DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +79,19 @@
 			path = AccountSetup;
 			sourceTree = "<group>";
 		};
+		DD4020DE28125BDA003FABC6 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD4020DF28125C00003FABC6 /* MainTabBar.storyboard */,
+				DD4020E128125C3D003FABC6 /* HomeTab.storyboard */,
+				DD4020E328125F6D003FABC6 /* FindTab.storyboard */,
+				DD4020E528126883003FABC6 /* ReelsTab.storyboard */,
+				DD4020E72812688A003FABC6 /* ShopTab.storyboard */,
+				DD4020E9281268B1003FABC6 /* UserTab.storyboard */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 		DD94D6BC27FFF2000079FB81 = {
 			isa = PBXGroup;
 			children = (
@@ -89,8 +114,9 @@
 				DD94D6C827FFF2000079FB81 /* AppDelegate.swift */,
 				DD94D6CA27FFF2000079FB81 /* SceneDelegate.swift */,
 				DD4020D52812442F003FABC6 /* AccountSetup */,
-				DD94D6D127FFF2010079FB81 /* Assets.xcassets */,
+				DD4020DE28125BDA003FABC6 /* MainTabBar */,
 				DD94D6D327FFF2010079FB81 /* LaunchScreen.storyboard */,
+				DD94D6D127FFF2010079FB81 /* Assets.xcassets */,
 				DD94D6D627FFF2010079FB81 /* Info.plist */,
 			);
 			path = "Instagram-CloneCoding";
@@ -156,11 +182,17 @@
 			files = (
 				DD94D6D527FFF2010079FB81 /* LaunchScreen.storyboard in Resources */,
 				DD4020DB28124501003FABC6 /* SecondSignupViewController.storyboard in Resources */,
+				DD4020EA281268B1003FABC6 /* UserTab.storyboard in Resources */,
+				DD4020E82812688A003FABC6 /* ShopTab.storyboard in Resources */,
 				DD4020D7281244EC003FABC6 /* LoginViewController.storyboard in Resources */,
 				DD94D6D227FFF2010079FB81 /* Assets.xcassets in Resources */,
 				DD94D6D027FFF2000079FB81 /* Main.storyboard in Resources */,
+				DD4020E628126883003FABC6 /* ReelsTab.storyboard in Resources */,
+				DD4020E428125F6D003FABC6 /* FindTab.storyboard in Resources */,
+				DD4020E028125C00003FABC6 /* MainTabBar.storyboard in Resources */,
 				DD4020DD2812450B003FABC6 /* WelcomeViewController.storyboard in Resources */,
 				DD4020D9281244F7003FABC6 /* FirstSignupViewController.storyboard in Resources */,
+				DD4020E228125C3D003FABC6 /* HomeTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
