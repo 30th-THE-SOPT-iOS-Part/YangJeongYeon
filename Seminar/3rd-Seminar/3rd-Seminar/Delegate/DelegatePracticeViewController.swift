@@ -7,14 +7,27 @@
 
 import UIKit
 
-class DelegatePracticeViewController: UIViewController {
+class DelegatePracticeViewController: UIViewController, SecondViewControllerDelegate {
+    
+    func sendData(data: String) {
+        dataLabel.text = data
+    }
     
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var dataLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         textField.delegate = self
+    }
+    
+    @IBAction func tapNextBtn(_ sender: Any) {
+        guard let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else { return }
+        
+        secondViewController.delegate = self
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
 }
 

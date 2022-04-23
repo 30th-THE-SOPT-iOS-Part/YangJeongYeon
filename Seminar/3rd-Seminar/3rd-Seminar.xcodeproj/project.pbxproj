@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD61B3452813EB99007D943E /* DelegatePracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */; };
 		DD9DC8BF2813C0A500D3A7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8BE2813C0A500D3A7F8 /* AppDelegate.swift */; };
 		DD9DC8C12813C0A500D3A7F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */; };
 		DD9DC8C32813C0A500D3A7F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8C22813C0A500D3A7F8 /* ViewController.swift */; };
 		DD9DC8C62813C0A500D3A7F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8C42813C0A500D3A7F8 /* Main.storyboard */; };
 		DD9DC8C82813C0A600D3A7F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8C72813C0A600D3A7F8 /* Assets.xcassets */; };
 		DD9DC8CB2813C0A600D3A7F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8C92813C0A600D3A7F8 /* LaunchScreen.storyboard */; };
-		DD9DC8D32813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8D22813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard */; };
 		DD9DC8D52813D01C00D3A7F8 /* DelegatePracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */; };
+		DD9DC8D72813D80E00D3A7F8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8D62813D80E00D3A7F8 /* SecondViewController.swift */; };
+		DD9DC8DA2813DEEA00D3A7F8 /* TableViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8D92813DEEA00D3A7F8 /* TableViewPractice.storyboard */; };
+		DD9DC8DC2813DEFB00D3A7F8 /* TableViewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8DB2813DEFB00D3A7F8 /* TableViewPracticeViewController.swift */; };
+		DD9DC8E02813DFB200D3A7F8 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8DE2813DFB200D3A7F8 /* MusicTableViewCell.swift */; };
+		DD9DC8E12813DFB200D3A7F8 /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8DF2813DFB200D3A7F8 /* MusicTableViewCell.xib */; };
+		DD9DC8E32813E47400D3A7F8 /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8E22813E47400D3A7F8 /* MusicDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DelegatePracticeViewController.storyboard; path = ../../../../../../../Desktop/DelegatePracticeViewController.storyboard; sourceTree = "<group>"; };
 		DD9DC8BB2813C0A500D3A7F8 /* 3rd-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3rd-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DC8BE2813C0A500D3A7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +33,13 @@
 		DD9DC8C72813C0A600D3A7F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9DC8CA2813C0A600D3A7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9DC8CC2813C0A600D3A7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD9DC8D22813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegatePracticeViewController.storyboard; sourceTree = "<group>"; };
 		DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeViewController.swift; sourceTree = "<group>"; };
+		DD9DC8D62813D80E00D3A7F8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DD9DC8D92813DEEA00D3A7F8 /* TableViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewPractice.storyboard; sourceTree = "<group>"; };
+		DD9DC8DB2813DEFB00D3A7F8 /* TableViewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPracticeViewController.swift; sourceTree = "<group>"; };
+		DD9DC8DE2813DFB200D3A7F8 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		DD9DC8DF2813DFB200D3A7F8 /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		DD9DC8E22813E47400D3A7F8 /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +73,38 @@
 			isa = PBXGroup;
 			children = (
 				DD9DC8BE2813C0A500D3A7F8 /* AppDelegate.swift */,
+				DD9DC8DD2813DF0000D3A7F8 /* Table View */,
 				DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */,
 				DD9DC8C22813C0A500D3A7F8 /* ViewController.swift */,
 				DD9DC8C42813C0A500D3A7F8 /* Main.storyboard */,
-				DD9DC8D22813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard */,
-				DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */,
+				DD9DC8D82813DE9400D3A7F8 /* Delegate */,
 				DD9DC8C72813C0A600D3A7F8 /* Assets.xcassets */,
 				DD9DC8C92813C0A600D3A7F8 /* LaunchScreen.storyboard */,
 				DD9DC8CC2813C0A600D3A7F8 /* Info.plist */,
 			);
 			path = "3rd-Seminar";
+			sourceTree = "<group>";
+		};
+		DD9DC8D82813DE9400D3A7F8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */,
+				DD9DC8D62813D80E00D3A7F8 /* SecondViewController.swift */,
+				DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DD9DC8DD2813DF0000D3A7F8 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DC8D92813DEEA00D3A7F8 /* TableViewPractice.storyboard */,
+				DD9DC8DE2813DFB200D3A7F8 /* MusicTableViewCell.swift */,
+				DD9DC8DF2813DFB200D3A7F8 /* MusicTableViewCell.xib */,
+				DD9DC8E22813E47400D3A7F8 /* MusicDataModel.swift */,
+				DD9DC8DB2813DEFB00D3A7F8 /* TableViewPracticeViewController.swift */,
+			);
+			path = "Table View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9DC8CB2813C0A600D3A7F8 /* LaunchScreen.storyboard in Resources */,
-				DD9DC8D32813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard in Resources */,
 				DD9DC8C82813C0A600D3A7F8 /* Assets.xcassets in Resources */,
+				DD9DC8E12813DFB200D3A7F8 /* MusicTableViewCell.xib in Resources */,
+				DD61B3452813EB99007D943E /* DelegatePracticeViewController.storyboard in Resources */,
+				DD9DC8DA2813DEEA00D3A7F8 /* TableViewPractice.storyboard in Resources */,
 				DD9DC8C62813C0A500D3A7F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +184,11 @@
 				DD9DC8D52813D01C00D3A7F8 /* DelegatePracticeViewController.swift in Sources */,
 				DD9DC8C32813C0A500D3A7F8 /* ViewController.swift in Sources */,
 				DD9DC8BF2813C0A500D3A7F8 /* AppDelegate.swift in Sources */,
+				DD9DC8E32813E47400D3A7F8 /* MusicDataModel.swift in Sources */,
+				DD9DC8D72813D80E00D3A7F8 /* SecondViewController.swift in Sources */,
+				DD9DC8E02813DFB200D3A7F8 /* MusicTableViewCell.swift in Sources */,
 				DD9DC8C12813C0A500D3A7F8 /* SceneDelegate.swift in Sources */,
+				DD9DC8DC2813DEFB00D3A7F8 /* TableViewPracticeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
