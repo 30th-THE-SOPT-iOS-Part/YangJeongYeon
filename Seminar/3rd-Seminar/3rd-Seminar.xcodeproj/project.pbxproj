@@ -13,6 +13,8 @@
 		DD9DC8C62813C0A500D3A7F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8C42813C0A500D3A7F8 /* Main.storyboard */; };
 		DD9DC8C82813C0A600D3A7F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8C72813C0A600D3A7F8 /* Assets.xcassets */; };
 		DD9DC8CB2813C0A600D3A7F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8C92813C0A600D3A7F8 /* LaunchScreen.storyboard */; };
+		DD9DC8D32813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DC8D22813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard */; };
+		DD9DC8D52813D01C00D3A7F8 /* DelegatePracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DD9DC8C72813C0A600D3A7F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9DC8CA2813C0A600D3A7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9DC8CC2813C0A600D3A7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DC8D22813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegatePracticeViewController.storyboard; sourceTree = "<group>"; };
+		DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */,
 				DD9DC8C22813C0A500D3A7F8 /* ViewController.swift */,
 				DD9DC8C42813C0A500D3A7F8 /* Main.storyboard */,
+				DD9DC8D22813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard */,
+				DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */,
 				DD9DC8C72813C0A600D3A7F8 /* Assets.xcassets */,
 				DD9DC8C92813C0A600D3A7F8 /* LaunchScreen.storyboard */,
 				DD9DC8CC2813C0A600D3A7F8 /* Info.plist */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9DC8CB2813C0A600D3A7F8 /* LaunchScreen.storyboard in Resources */,
+				DD9DC8D32813CFFD00D3A7F8 /* DelegatePracticeViewController.storyboard in Resources */,
 				DD9DC8C82813C0A600D3A7F8 /* Assets.xcassets in Resources */,
 				DD9DC8C62813C0A500D3A7F8 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9DC8D52813D01C00D3A7F8 /* DelegatePracticeViewController.swift in Sources */,
 				DD9DC8C32813C0A500D3A7F8 /* ViewController.swift in Sources */,
 				DD9DC8BF2813C0A500D3A7F8 /* AppDelegate.swift in Sources */,
 				DD9DC8C12813C0A500D3A7F8 /* SceneDelegate.swift in Sources */,
