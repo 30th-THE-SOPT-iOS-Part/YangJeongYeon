@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DD61B3452813EB99007D943E /* DelegatePracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */; };
+		DD61B34D2813EF2B007D943E /* CollectionViewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61B34C2813EF2A007D943E /* CollectionViewPracticeViewController.swift */; };
+		DD61B34F2813EF31007D943E /* CollectionViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD61B34E2813EF31007D943E /* CollectionViewPractice.storyboard */; };
+		DD61B3522813EFAA007D943E /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61B3502813EFAA007D943E /* MusicCollectionViewCell.swift */; };
+		DD61B3532813EFAA007D943E /* MusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD61B3512813EFAA007D943E /* MusicCollectionViewCell.xib */; };
+		DD61B3552813F106007D943E /* AlbumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61B3542813F106007D943E /* AlbumDataModel.swift */; };
 		DD9DC8BF2813C0A500D3A7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8BE2813C0A500D3A7F8 /* AppDelegate.swift */; };
 		DD9DC8C12813C0A500D3A7F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */; };
 		DD9DC8C32813C0A500D3A7F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DC8C22813C0A500D3A7F8 /* ViewController.swift */; };
@@ -25,6 +30,11 @@
 
 /* Begin PBXFileReference section */
 		DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DelegatePracticeViewController.storyboard; path = ../../../../../../../Desktop/DelegatePracticeViewController.storyboard; sourceTree = "<group>"; };
+		DD61B34C2813EF2A007D943E /* CollectionViewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPracticeViewController.swift; sourceTree = "<group>"; };
+		DD61B34E2813EF31007D943E /* CollectionViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewPractice.storyboard; sourceTree = "<group>"; };
+		DD61B3502813EFAA007D943E /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD61B3512813EFAA007D943E /* MusicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCollectionViewCell.xib; sourceTree = "<group>"; };
+		DD61B3542813F106007D943E /* AlbumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDataModel.swift; sourceTree = "<group>"; };
 		DD9DC8BB2813C0A500D3A7F8 /* 3rd-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3rd-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DC8BE2813C0A500D3A7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD61B34B2813EF0D007D943E /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				DD61B34C2813EF2A007D943E /* CollectionViewPracticeViewController.swift */,
+				DD61B34E2813EF31007D943E /* CollectionViewPractice.storyboard */,
+				DD61B3502813EFAA007D943E /* MusicCollectionViewCell.swift */,
+				DD61B3512813EFAA007D943E /* MusicCollectionViewCell.xib */,
+				DD61B3542813F106007D943E /* AlbumDataModel.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
 		DD9DC8B22813C0A500D3A7F8 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +97,7 @@
 				DD9DC8BE2813C0A500D3A7F8 /* AppDelegate.swift */,
 				DD9DC8DD2813DF0000D3A7F8 /* Table View */,
 				DD9DC8C02813C0A500D3A7F8 /* SceneDelegate.swift */,
+				DD61B34B2813EF0D007D943E /* Collection View */,
 				DD9DC8C22813C0A500D3A7F8 /* ViewController.swift */,
 				DD9DC8C42813C0A500D3A7F8 /* Main.storyboard */,
 				DD9DC8D82813DE9400D3A7F8 /* Delegate */,
@@ -169,7 +192,9 @@
 				DD9DC8C82813C0A600D3A7F8 /* Assets.xcassets in Resources */,
 				DD9DC8E12813DFB200D3A7F8 /* MusicTableViewCell.xib in Resources */,
 				DD61B3452813EB99007D943E /* DelegatePracticeViewController.storyboard in Resources */,
+				DD61B3532813EFAA007D943E /* MusicCollectionViewCell.xib in Resources */,
 				DD9DC8DA2813DEEA00D3A7F8 /* TableViewPractice.storyboard in Resources */,
+				DD61B34F2813EF31007D943E /* CollectionViewPractice.storyboard in Resources */,
 				DD9DC8C62813C0A500D3A7F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,9 +210,12 @@
 				DD9DC8C32813C0A500D3A7F8 /* ViewController.swift in Sources */,
 				DD9DC8BF2813C0A500D3A7F8 /* AppDelegate.swift in Sources */,
 				DD9DC8E32813E47400D3A7F8 /* MusicDataModel.swift in Sources */,
+				DD61B3552813F106007D943E /* AlbumDataModel.swift in Sources */,
 				DD9DC8D72813D80E00D3A7F8 /* SecondViewController.swift in Sources */,
 				DD9DC8E02813DFB200D3A7F8 /* MusicTableViewCell.swift in Sources */,
+				DD61B3522813EFAA007D943E /* MusicCollectionViewCell.swift in Sources */,
 				DD9DC8C12813C0A500D3A7F8 /* SceneDelegate.swift in Sources */,
+				DD61B34D2813EF2B007D943E /* CollectionViewPracticeViewController.swift in Sources */,
 				DD9DC8DC2813DEFB00D3A7F8 /* TableViewPracticeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
