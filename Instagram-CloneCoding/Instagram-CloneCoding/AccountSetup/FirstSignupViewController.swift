@@ -15,9 +15,15 @@ class FirstSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureUI()
+    }
+    
+    // MARK: - UI
+    private func configureUI(){
         nextBtn.isEnabled = false
-        
         usernameTextField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
     }
     
     @objc func editingChanged(_ textField: UITextField) {
