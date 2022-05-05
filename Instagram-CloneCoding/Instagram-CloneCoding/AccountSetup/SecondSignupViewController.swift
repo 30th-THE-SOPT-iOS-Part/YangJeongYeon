@@ -16,17 +16,24 @@ class SecondSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureUI()
+    }
+    
+    // MARK: - UI
+    private func configureUI(){
         nextBtn.isEnabled = false
-        
         passwordTextField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
-    }    
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
+    }
 
     @objc func editingChanged(_ textField: UITextField) {
         nextBtn.isEnabled = !(passwordTextField.text?.isEmpty ?? true)
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let welcomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
+        let welcomeStoryboard = UIStoryboard(name: "WelcomeViewController", bundle: nil)
+        guard let welcomeViewController = welcomeStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
         welcomeViewController.username = username
         

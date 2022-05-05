@@ -28,15 +28,25 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tapLoginBtn(_ sender: Any) {
-        guard let welcomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
+        let welcomeStoryboard = UIStoryboard(name: "WelcomeViewController", bundle: nil)
+        guard let welcomeViewController = welcomeStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
         welcomeViewController.username = usernameTextField.text
         
         self.present(welcomeViewController, animated: true, completion: nil)
     }
     
+    /*
+     [?] 왜 기존에는 firstSigupViewController를 FirstSignupViewController로 가져오지 않아도 괜찮았는데
+         firstSignupStoryboard에서 가져올때는 타입캐스팅을 해야할까
+     @IBAction func tapSignupBtn(_ sender: Any) {
+         guard let firstSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "FirstSignupViewController") else { return }
+         self.navigationController?.pushViewController(firstSigupViewController, animated: true)
+     }
+     */
     @IBAction func tapSignupBtn(_ sender: Any) {
-        guard let firstSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "FirstSignupViewController") else { return }
+        let firstSignupStoryboard = UIStoryboard(name: "FirstSignupViewController", bundle: nil)
+        guard let firstSigupViewController = firstSignupStoryboard.instantiateViewController(withIdentifier: "FirstSignupViewController") as? FirstSignupViewController else { return }
         self.navigationController?.pushViewController(firstSigupViewController, animated: true)
     }
 }

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="btE-r2-prF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Signup View Controller-->
+        <scene sceneID="QYP-6y-Hcr">
+            <objects>
+                <viewController storyboardIdentifier="FirstSignupViewController" id="btE-r2-prF" customClass="FirstSignupViewController" customModule="Instagram_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anh-tL-0ai">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd2-tC-DBB">
+                                <rect key="frame" x="16" y="263" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ITF-q6-poB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="tapNextBtn:" destination="btE-r2-prF" eventType="touchUpInside" id="rX3-dR-bgs"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="sjT-Kl-cA8">
+                                <rect key="frame" x="16" y="94" width="382" height="147"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 이름 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-NU-OV0">
+                                        <rect key="frame" x="95.5" y="0.0" width="191.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lO-gx-DVa">
+                                        <rect key="frame" x="2.5" y="50.5" width="377.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EX6-k6-9ZJ">
+                                        <rect key="frame" x="0.0" y="103" width="382" height="44"/>
+                                        <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7cw-ah-sGL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EX6-k6-9ZJ" firstAttribute="leading" secondItem="sjT-Kl-cA8" secondAttribute="leading" id="BEK-Ta-UFJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="EX6-k6-9ZJ" secondAttribute="trailing" id="Vdb-tn-bR0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QiV-hI-CMJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sjT-Kl-cA8" secondAttribute="trailing" constant="16" id="5E8-8q-rGw"/>
+                            <constraint firstItem="QiV-hI-CMJ" firstAttribute="trailing" secondItem="rd2-tC-DBB" secondAttribute="trailing" constant="16" id="V20-YY-zKD"/>
+                            <constraint firstItem="rd2-tC-DBB" firstAttribute="leading" secondItem="QiV-hI-CMJ" secondAttribute="leading" constant="16" id="WyX-rc-7PT"/>
+                            <constraint firstItem="sjT-Kl-cA8" firstAttribute="top" secondItem="QiV-hI-CMJ" secondAttribute="top" constant="50" id="gfn-jG-GkU"/>
+                            <constraint firstItem="sjT-Kl-cA8" firstAttribute="leading" secondItem="QiV-hI-CMJ" secondAttribute="leading" constant="16" id="k4S-C2-Snl"/>
+                            <constraint firstItem="rd2-tC-DBB" firstAttribute="top" secondItem="sjT-Kl-cA8" secondAttribute="bottom" constant="22" id="xUT-7C-SkK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="79X-8X-HPw"/>
+                    <connections>
+                        <outlet property="nextBtn" destination="rd2-tC-DBB" id="JTy-2r-PuG"/>
+                        <outlet property="usernameTextField" destination="EX6-k6-9ZJ" id="roR-H6-JSO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWB-5i-5wz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

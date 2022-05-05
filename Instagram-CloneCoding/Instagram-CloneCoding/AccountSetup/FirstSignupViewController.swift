@@ -15,9 +15,15 @@ class FirstSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureUI()
+    }
+    
+    // MARK: - UI
+    private func configureUI(){
         nextBtn.isEnabled = false
-        
         usernameTextField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
     }
     
     @objc func editingChanged(_ textField: UITextField) {
@@ -25,7 +31,8 @@ class FirstSignupViewController: UIViewController {
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let secondSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondSignupViewController") as? SecondSignupViewController else { return }
+        let secondSignupStoryboard = UIStoryboard(name: "SecondSignupViewController", bundle: nil)
+        guard let secondSigupViewController = secondSignupStoryboard.instantiateViewController(withIdentifier: "SecondSignupViewController") as? SecondSignupViewController else { return }
         
         secondSigupViewController.username = usernameTextField.text
         
