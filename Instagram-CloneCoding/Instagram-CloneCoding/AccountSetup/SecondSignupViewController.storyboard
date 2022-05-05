@@ -16,36 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R80-Zt-cpG">
-                                <rect key="frame" x="125" y="100" width="164" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 정보를 입력하지 않아도 됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okl-rC-nZc">
-                                <rect key="frame" x="54" y="142" width="306" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="306" id="dA9-2q-ofa"/>
-                                    <constraint firstAttribute="height" constant="57" id="oCh-bM-6Jn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2er-lD-4Fb">
-                                <rect key="frame" x="57" y="217" width="300" height="44"/>
-                                <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Rth-NL-71d"/>
-                                    <constraint firstAttribute="height" constant="44" id="yOM-Lt-giA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryv-UE-L5x">
-                                <rect key="frame" x="57" y="281" width="300" height="44"/>
+                                <rect key="frame" x="16" y="263" width="382" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="EAb-ax-zdR"/>
                                     <constraint firstAttribute="height" constant="44" id="ZiA-xj-zHI"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -54,19 +27,47 @@
                                     <action selector="tapNextBtn:" destination="DLh-3W-ZBR" eventType="touchUpInside" id="2md-wi-ZdC"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-oS-1i9">
+                                <rect key="frame" x="16" y="94" width="382" height="147"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R80-Zt-cpG">
+                                        <rect key="frame" x="109.5" y="0.0" width="163.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 정보를 입력하지 않아도 됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okl-rC-nZc">
+                                        <rect key="frame" x="16" y="50.5" width="350" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2er-lD-4Fb">
+                                        <rect key="frame" x="0.0" y="103" width="382" height="44"/>
+                                        <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="FBg-Vi-b5b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2er-lD-4Fb" secondAttribute="trailing" id="OFF-E5-joO"/>
+                                    <constraint firstItem="2er-lD-4Fb" firstAttribute="leading" secondItem="QIs-oS-1i9" secondAttribute="leading" id="uHo-B6-iAD"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pq2-rL-kXw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2er-lD-4Fb" firstAttribute="top" secondItem="okl-rC-nZc" secondAttribute="bottom" constant="18" id="6bA-rK-pDh"/>
-                            <constraint firstItem="R80-Zt-cpG" firstAttribute="centerX" secondItem="1hd-pR-idr" secondAttribute="centerX" id="LxS-nG-pYP"/>
-                            <constraint firstItem="okl-rC-nZc" firstAttribute="centerX" secondItem="1hd-pR-idr" secondAttribute="centerX" id="MLg-Bi-qOt"/>
-                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="leading" secondItem="2er-lD-4Fb" secondAttribute="leading" id="PFW-uk-G2X"/>
-                            <constraint firstItem="okl-rC-nZc" firstAttribute="centerX" secondItem="2er-lD-4Fb" secondAttribute="centerX" id="ckE-pU-T0O"/>
-                            <constraint firstItem="R80-Zt-cpG" firstAttribute="top" secondItem="pq2-rL-kXw" secondAttribute="top" constant="56" id="egi-bk-fNj"/>
+                            <constraint firstItem="pq2-rL-kXw" firstAttribute="trailing" secondItem="QIs-oS-1i9" secondAttribute="trailing" constant="16" id="Lwa-Rh-3dn"/>
+                            <constraint firstItem="pq2-rL-kXw" firstAttribute="trailing" secondItem="Ryv-UE-L5x" secondAttribute="trailing" constant="16" id="RPM-Bn-ust"/>
+                            <constraint firstItem="QIs-oS-1i9" firstAttribute="leading" secondItem="pq2-rL-kXw" secondAttribute="leading" constant="16" id="XIa-VH-q5M"/>
+                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="leading" secondItem="pq2-rL-kXw" secondAttribute="leading" constant="16" id="brI-Yn-AyT"/>
+                            <constraint firstItem="QIs-oS-1i9" firstAttribute="top" secondItem="pq2-rL-kXw" secondAttribute="top" constant="50" id="hRm-aH-hVF"/>
+                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="top" secondItem="QIs-oS-1i9" secondAttribute="bottom" constant="22" id="iH5-Au-gGU"/>
                             <constraint firstItem="Ryv-UE-L5x" firstAttribute="centerX" secondItem="1hd-pR-idr" secondAttribute="centerX" id="neR-OE-O0f"/>
-                            <constraint firstItem="Ryv-UE-L5x" firstAttribute="top" secondItem="2er-lD-4Fb" secondAttribute="bottom" constant="20" id="pQt-j5-c9q"/>
-                            <constraint firstItem="okl-rC-nZc" firstAttribute="top" secondItem="R80-Zt-cpG" secondAttribute="bottom" constant="10" id="sSI-WI-td9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nqW-7z-MRt"/>
