@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD61B3452813EB99007D943E /* DelegatePracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */; };
+		DD496C8328152FAD003BC69B /* DelegatePracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD496C8228152FAD003BC69B /* DelegatePracticeViewController.storyboard */; };
 		DD61B34D2813EF2B007D943E /* CollectionViewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61B34C2813EF2A007D943E /* CollectionViewPracticeViewController.swift */; };
 		DD61B34F2813EF31007D943E /* CollectionViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD61B34E2813EF31007D943E /* CollectionViewPractice.storyboard */; };
 		DD61B3522813EFAA007D943E /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61B3502813EFAA007D943E /* MusicCollectionViewCell.swift */; };
@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DelegatePracticeViewController.storyboard; path = ../../../../../../../Desktop/DelegatePracticeViewController.storyboard; sourceTree = "<group>"; };
+		DD496C8228152FAD003BC69B /* DelegatePracticeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DelegatePracticeViewController.storyboard; sourceTree = "<group>"; };
 		DD61B34C2813EF2A007D943E /* CollectionViewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPracticeViewController.swift; sourceTree = "<group>"; };
 		DD61B34E2813EF31007D943E /* CollectionViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewPractice.storyboard; sourceTree = "<group>"; };
 		DD61B3502813EFAA007D943E /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		DD9DC8D82813DE9400D3A7F8 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				DD61B3442813EB99007D943E /* DelegatePracticeViewController.storyboard */,
+				DD496C8228152FAD003BC69B /* DelegatePracticeViewController.storyboard */,
 				DD9DC8D62813D80E00D3A7F8 /* SecondViewController.swift */,
 				DD9DC8D42813D01C00D3A7F8 /* DelegatePracticeViewController.swift */,
 			);
@@ -191,9 +191,9 @@
 				DD9DC8CB2813C0A600D3A7F8 /* LaunchScreen.storyboard in Resources */,
 				DD9DC8C82813C0A600D3A7F8 /* Assets.xcassets in Resources */,
 				DD9DC8E12813DFB200D3A7F8 /* MusicTableViewCell.xib in Resources */,
-				DD61B3452813EB99007D943E /* DelegatePracticeViewController.storyboard in Resources */,
 				DD61B3532813EFAA007D943E /* MusicCollectionViewCell.xib in Resources */,
 				DD9DC8DA2813DEEA00D3A7F8 /* TableViewPractice.storyboard in Resources */,
+				DD496C8328152FAD003BC69B /* DelegatePracticeViewController.storyboard in Resources */,
 				DD61B34F2813EF31007D943E /* CollectionViewPractice.storyboard in Resources */,
 				DD9DC8C62813C0A500D3A7F8 /* Main.storyboard in Resources */,
 			);

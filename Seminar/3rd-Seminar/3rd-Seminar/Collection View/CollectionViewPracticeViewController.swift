@@ -16,8 +16,11 @@ class CollectionViewPracticeViewController: UIViewController {
 
         let nib = UINib(nibName: MusicCollectionViewCell.identifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: MusicCollectionViewCell.identifier)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
-    
+    // MusicCollectionViewCell.identifier -> MusicCollectionViewCell.typeName
     
 }
 
