@@ -140,8 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				DD4020E128125C3D003FABC6 /* HomeTab.storyboard */,
-				DDB4108A2825584400B4BB65 /* FeedTableViewCell.swift */,
 				DD620687282561A1006307AD /* FeedDataModel.swift */,
+				DDB4108A2825584400B4BB65 /* FeedTableViewCell.swift */,
 				DDB4108B2825584400B4BB65 /* FeedTableViewCell.xib */,
 				DDB41084282540CC00B4BB65 /* StoryCollectionViewCell.swift */,
 				DDB41085282540CC00B4BB65 /* StoryCollectionViewCell.xib */,

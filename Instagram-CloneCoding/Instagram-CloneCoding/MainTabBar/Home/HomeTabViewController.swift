@@ -9,6 +9,7 @@ import UIKit
 
 class HomeTabViewController: UIViewController {
     @IBOutlet weak var storyCollectionView: UICollectionView!
+    @IBOutlet weak var feedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +20,21 @@ class HomeTabViewController: UIViewController {
     // 요거 다 configureUI 안에 넣어도 되나요? 분리가 필요하다면 어떤 이름의 함수에다가 분리하는게 좋을까요??
     // MARK: - UI
     private func configureUI(){
-        let nib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
-        storyCollectionView.register(nib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
+        let storyNib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
+        storyCollectionView.register(storyNib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
         
         storyCollectionView.delegate = self
         storyCollectionView.dataSource = self
         
-        if let layout = storyCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
+        if let storyLayout = storyCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            storyLayout.scrollDirection = .horizontal
         }
+        
+        let feedNib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
+        feedTableView.register(feedNib, forCellReuseIdentifier: FeedTableViewCell.identifier)
+        
+        feedTableView.delegate = self
+        feedTableView.dataSource = self
     }
 }
 
@@ -67,4 +74,26 @@ extension HomeTabViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 4
     }
+}
+
+extension HomeTabViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 488
+    }
+}
+
+extension HomeTabViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return FeedDataModel.sampleData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
+        
+        cell.setData(FeedDataModel.sampleData[indexPath.row])
+        
+        return cell
+    }
+    
+    
 }
