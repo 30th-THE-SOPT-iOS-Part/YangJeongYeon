@@ -26,6 +26,10 @@
 		DD94D6D027FFF2000079FB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD94D6CE27FFF2000079FB81 /* Main.storyboard */; };
 		DD94D6D227FFF2010079FB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD94D6D127FFF2010079FB81 /* Assets.xcassets */; };
 		DD94D6D527FFF2010079FB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD94D6D327FFF2010079FB81 /* LaunchScreen.storyboard */; };
+		DDB41083282537CE00B4BB65 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB41082282537CE00B4BB65 /* HomeTabViewController.swift */; };
+		DDB41086282540CC00B4BB65 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB41084282540CC00B4BB65 /* StoryCollectionViewCell.swift */; };
+		DDB41087282540CC00B4BB65 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB41085282540CC00B4BB65 /* StoryCollectionViewCell.xib */; };
+		DDB410892825424D00B4BB65 /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB410882825424D00B4BB65 /* StoryDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		DD94D6D127FFF2010079FB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD94D6D427FFF2010079FB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD94D6D627FFF2010079FB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB41082282537CE00B4BB65 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		DDB41084282540CC00B4BB65 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDB41085282540CC00B4BB65 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		DDB410882825424D00B4BB65 /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,10 @@
 			children = (
 				DD4020DF28125C00003FABC6 /* MainTabBar.storyboard */,
 				DD4020E128125C3D003FABC6 /* HomeTab.storyboard */,
+				DDB41084282540CC00B4BB65 /* StoryCollectionViewCell.swift */,
+				DDB41085282540CC00B4BB65 /* StoryCollectionViewCell.xib */,
+				DDB410882825424D00B4BB65 /* StoryDataModel.swift */,
+				DDB41082282537CE00B4BB65 /* HomeTabViewController.swift */,
 				DD4020E328125F6D003FABC6 /* FindTab.storyboard */,
 				DD4020E528126883003FABC6 /* ReelsTab.storyboard */,
 				DD4020E72812688A003FABC6 /* ShopTab.storyboard */,
@@ -184,6 +196,7 @@
 				DD4020DB28124501003FABC6 /* SecondSignupViewController.storyboard in Resources */,
 				DD4020EA281268B1003FABC6 /* UserTab.storyboard in Resources */,
 				DD4020E82812688A003FABC6 /* ShopTab.storyboard in Resources */,
+				DDB41087282540CC00B4BB65 /* StoryCollectionViewCell.xib in Resources */,
 				DD4020D7281244EC003FABC6 /* LoginViewController.storyboard in Resources */,
 				DD94D6D227FFF2010079FB81 /* Assets.xcassets in Resources */,
 				DD94D6D027FFF2000079FB81 /* Main.storyboard in Resources */,
@@ -203,12 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB41086282540CC00B4BB65 /* StoryCollectionViewCell.swift in Sources */,
 				DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */,
 				DD94D6C927FFF2000079FB81 /* AppDelegate.swift in Sources */,
 				DD94D6CB27FFF2000079FB81 /* SceneDelegate.swift in Sources */,
+				DDB41083282537CE00B4BB65 /* HomeTabViewController.swift in Sources */,
 				DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */,
 				DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */,
 				DD5177712802DC460039FB86 /* WelcomeViewController.swift in Sources */,
+				DDB410892825424D00B4BB65 /* StoryDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
