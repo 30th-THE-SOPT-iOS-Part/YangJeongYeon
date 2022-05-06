@@ -72,21 +72,40 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyE-Vy-t0f">
+                                <rect key="frame" x="0.0" y="172" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="VSR-f8-ZVg"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5v5-12-8Xw">
+                                <rect key="frame" x="0.0" y="173" width="414" height="640"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pzq-lf-Daa" secondAttribute="trailing" id="22W-xz-T1e"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5v5-12-8Xw" secondAttribute="trailing" id="7Nz-9V-dYc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XgW-zL-ycz" secondAttribute="trailing" id="GSa-xZ-c46"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5v5-12-8Xw" secondAttribute="bottom" id="Kww-Zl-C4J"/>
                             <constraint firstItem="pzq-lf-Daa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="PWh-KC-hOg"/>
+                            <constraint firstItem="CyE-Vy-t0f" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PiX-9m-t2E"/>
+                            <constraint firstItem="CyE-Vy-t0f" firstAttribute="top" secondItem="XgW-zL-ycz" secondAttribute="bottom" constant="8" id="Pw3-M6-enR"/>
                             <constraint firstItem="XgW-zL-ycz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SVz-cf-H74"/>
+                            <constraint firstItem="5v5-12-8Xw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cAQ-UB-pen"/>
                             <constraint firstItem="pzq-lf-Daa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="f01-P5-NcM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CyE-Vy-t0f" secondAttribute="trailing" id="jqI-aA-KSr"/>
                             <constraint firstItem="XgW-zL-ycz" firstAttribute="top" secondItem="pzq-lf-Daa" secondAttribute="bottom" constant="4" id="llm-rE-Kmo"/>
+                            <constraint firstItem="5v5-12-8Xw" firstAttribute="top" secondItem="CyE-Vy-t0f" secondAttribute="bottom" id="mEf-Md-1JB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="YsO-2Q-Ebb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="feedTableView" destination="5v5-12-8Xw" id="otq-9Y-JoE"/>
                         <outlet property="storyCollectionView" destination="XgW-zL-ycz" id="bPg-q5-0Ro"/>
                     </connections>
                 </viewController>
