@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="mrN-xh-CDM">
-                                <rect key="frame" x="16" y="210" width="343" height="312"/>
+                                <rect key="frame" x="16" y="210" width="382" height="312"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagram Black Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AoC-NN-wim">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="28" trailing="8"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dof-z0-Ncm">
-                                        <rect key="frame" x="0.0" y="84" width="343" height="150"/>
+                                        <rect key="frame" x="0.0" y="84" width="382" height="150"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="fWZ-B7-0oI">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
                                                 <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="b1N-jS-cFm"/>
@@ -37,7 +37,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="B6q-K2-e0x">
-                                                <rect key="frame" x="0.0" y="60" width="343" height="44"/>
+                                                <rect key="frame" x="0.0" y="60" width="382" height="44"/>
                                                 <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="GAg-Us-hgx"/>
@@ -47,7 +47,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-Co-dfp">
-                                                <rect key="frame" x="0.0" y="120" width="343" height="30"/>
+                                                <rect key="frame" x="0.0" y="120" width="382" height="30"/>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="28.5" right="8"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="비밀번호를 잊으셨나요?">
@@ -57,7 +57,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-ox-EZ8">
-                                        <rect key="frame" x="0.0" y="268" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="268" width="382" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="sYK-iS-zy6"/>
                                             <constraint firstAttribute="height" constant="44" id="ugo-0E-G2p"/>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-eQ-TeB">
-                                <rect key="frame" x="92" y="559.5" width="191.5" height="32"/>
+                                <rect key="frame" x="111.5" y="559.5" width="191.5" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjE-c9-a7y">
                                         <rect key="frame" x="0.0" y="0.0" width="115.5" height="32"/>
