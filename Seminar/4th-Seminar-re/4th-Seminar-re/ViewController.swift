@@ -38,6 +38,8 @@ extension ViewController {
             password: password) { response in
             switch response {
             case .success(let data):
+                print("이게 진짜 성공")
+                print(data)
                 guard let data = data as? LoginResponse else { return }
                 print(data)
                 self.alert(message: data.message)

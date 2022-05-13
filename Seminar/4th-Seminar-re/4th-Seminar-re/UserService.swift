@@ -33,6 +33,7 @@ class UserService {
         dataRequest.responseData { response in
             switch response.result {
             case .success:
+                print("네트워크 성공")
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
                 let networkResult = self.judgeStatus(by: statusCode, value)
@@ -47,7 +48,7 @@ class UserService {
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return isValidData(data: data)
-        case 400: return .pathErr
+        case 409: return .pathErr
         case 500: return .serverErr
         default: return .networkFail
         }
@@ -57,6 +58,7 @@ class UserService {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponse.self, from: data)
         else { return .pathErr }
+        print(decodedData)
         
         return .success(decodedData.data as Any)
     }
