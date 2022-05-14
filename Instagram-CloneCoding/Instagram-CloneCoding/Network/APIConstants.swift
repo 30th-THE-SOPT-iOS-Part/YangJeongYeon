@@ -12,7 +12,7 @@ struct APIConstants {
     static let baseURL = "http://13.124.62.236"
     
     // MARK: Auth URL
-    static let signupURL = "/auth/signup"
-    static let loginURL = "/auth/signin"
+    static let signupURL = baseURL + "/auth/signup"
+    static let loginURL = baseURL + "/auth/signin"
     
 }

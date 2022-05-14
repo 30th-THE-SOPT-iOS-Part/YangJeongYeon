@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: Result 타입 사용하면 요거 없어도 되는건가??
 enum NetworkResult<T> {
     case success(T)
     case requestErr(T)
