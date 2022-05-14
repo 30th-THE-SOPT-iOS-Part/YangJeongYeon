@@ -12,6 +12,7 @@
                 <tabBarController storyboardIdentifier="MainTabBar" automaticallyAdjustsScrollViewInsets="NO" id="g7y-Di-1Je" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YOi-Ad-7bb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -67,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="571" y="102"/>
         </scene>
-        <!--UserTab-->
+        <!--ProfileTab-->
         <scene sceneID="0oO-pT-Heb">
             <objects>
-                <viewControllerPlaceholder storyboardName="UserTab" id="YVr-jq-eYy" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ProfileTab" id="YVr-jq-eYy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Hjy-fi-ltj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cY6-yS-ZrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
