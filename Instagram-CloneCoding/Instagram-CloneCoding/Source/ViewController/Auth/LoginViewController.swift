@@ -46,23 +46,24 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - Custom Methods
-    /// 로그인 성공시 alert 띄우는 메서드
-    private func alertUser(title: String, message: String, isSuccess: Bool)
+    /// 로그인 성공시에 alert 띄우는 메서드
+    private func successAlert(name: String)
     {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        // TODO: Result 타입이라는게 있던데 이걸로 처리하면 더 깔끔하지 않을까??
-        if isSuccess {
-            let alertAction = UIAlertAction(title: "확인", style: .default) { _ in
-                let mainTabBarStoryboard = UIStoryboard(name: "MainTabBar", bundle: nil)
-                let mainTabBar = mainTabBarStoryboard.instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
-                self.view.window?.rootViewController = mainTabBar
-            }
-            alert.addAction(alertAction)
+        let alert = UIAlertController(title: "로그인 성공", message: "\(name)님 환영합니다!", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "확인", style: .default) { _ in
+            let mainTabBarStoryboard = UIStoryboard(name: "MainTabBar", bundle: nil)
+            let mainTabBar = mainTabBarStoryboard.instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
+            self.view.window?.rootViewController = mainTabBar
         }
-        else {
-            let alertAction = UIAlertAction(title: "확인", style: .default, handler: nil)
-            alert.addAction(alertAction)
-        }
+        alert.addAction(alertAction)
+        present(alert, animated: true)
+    }
+    /// 로그인 실패시에 alert 띄우는 메서드
+    private func failAlert(errCode: String)
+    {
+        let alert = UIAlertController(title: "로그인 실패", message: "다시 시도해보세요\n\(errCode)", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alert.addAction(alertAction)
         present(alert, animated: true)
     }
 }
@@ -77,19 +78,17 @@ extension LoginViewController {
             switch response {
             case .success(let data):
                 guard let data = data as? LoginData else { return }
-                self.alertUser(title: "로그인 성공", message: "\(data.name)님 환영합니다!", isSuccess: true)
-            // 여기 뭔가 비효율적인 것 같은데 message의 에러코드만 전달하는 방법 뭐 없나??
-            // 성공/실패에 따른 alert 함수 자체를 따로 두는게 좋으려나?
+                self.successAlert(name: data.name)
             case .requestErr(_):
-                self.alertUser(title: "로그인 실패", message: "다시 시도해보세요\nRequest Error", isSuccess: false)
+                self.failAlert(errCode: "Request Error")
             case .pathErr:
-                self.alertUser(title: "로그인 실패", message: "다시 시도해보세요\nPath Error", isSuccess: false)
+                self.failAlert(errCode: "Path Error")
             case .serverErr:
-                self.alertUser(title: "로그인 실패", message: "다시 시도해보세요\nServer Error", isSuccess: false)
+                self.failAlert(errCode: "Server Error")
             case .networkFail:
-                self.alertUser(title: "로그인 실패", message: "다시 시도해보세요\nNetwork Fail Error", isSuccess: false)
+                self.failAlert(errCode: "Network Fail Error")
             default:
-                self.alertUser(title: "로그인 실패", message: "다시 시도해보세요\nError", isSuccess: false)
+                self.failAlert(errCode: "Error")
             }
         }
     }
