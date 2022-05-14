@@ -26,10 +26,6 @@ class HomeTabViewController: UIViewController {
         storyCollectionView.delegate = self
         storyCollectionView.dataSource = self
         
-        if let storyLayout = storyCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            storyLayout.scrollDirection = .horizontal
-        }
-        
         let feedNib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
         feedTableView.register(feedNib, forCellReuseIdentifier: FeedTableViewCell.identifier)
         
