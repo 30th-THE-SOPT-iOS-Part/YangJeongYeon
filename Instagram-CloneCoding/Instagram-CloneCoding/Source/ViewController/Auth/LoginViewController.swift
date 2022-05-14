@@ -9,10 +9,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    // MARK: - @IBOutlet
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +34,23 @@ class LoginViewController: UIViewController {
             }.contains(true)
     }
     
+    // MARK: - @IBAction
     @IBAction func tapLoginBtn(_ sender: Any) {
+        func login() {
+            guard let name = usernameTextField.text else { return }
+            let email = "jeong@gmail.com"
+            guard let password = passwordTextField.text else { return }
+            
+            UserService.shared.login(name: name, email: email, password: password) { response in
+                switch response {
+                case .success(let data):
+                    guard let data = data as? LoginData else { return }
+                    print("성공!! \(data.name)님 환영합니다!")
+                default:
+                    print("실패..")
+                }
+            }
+        }
         let welcomeStoryboard = UIStoryboard(name: "WelcomeViewController", bundle: nil)
         guard let welcomeViewController = welcomeStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
@@ -41,14 +59,6 @@ class LoginViewController: UIViewController {
         self.present(welcomeViewController, animated: true, completion: nil)
     }
     
-    /*
-     [?] 왜 기존에는 firstSigupViewController를 FirstSignupViewController로 가져오지 않아도 괜찮았는데
-         firstSignupStoryboard에서 가져올때는 타입캐스팅을 해야할까
-     @IBAction func tapSignupBtn(_ sender: Any) {
-         guard let firstSigupViewController = self.storyboard?.instantiateViewController(withIdentifier: "FirstSignupViewController") else { return }
-         self.navigationController?.pushViewController(firstSigupViewController, animated: true)
-     }
-     */
     @IBAction func tapSignupBtn(_ sender: Any) {
         let firstSignupStoryboard = UIStoryboard(name: "FirstSignupViewController", bundle: nil)
         guard let firstSigupViewController = firstSignupStoryboard.instantiateViewController(withIdentifier: "FirstSignupViewController") as? FirstSignupViewController else { return }

@@ -1,0 +1,18 @@
+//
+//  APIConstants.swift
+//  Instagram-CloneCoding
+//
+//  Created by 정연 on 2022/05/14.
+//
+
+import Foundation
+
+struct APIConstants {
+    // MARK: Base URL
+    static let baseURL = "http://13.124.62.236"
+    
+    // MARK: Auth URL
+    static let signupURL = "/auth/signup"
+    static let loginURL = "/auth/signin"
+    
+}

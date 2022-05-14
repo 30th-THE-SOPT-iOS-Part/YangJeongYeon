@@ -38,11 +38,11 @@ extension ViewController {
             password: password) { response in
             switch response {
             case .success(let data):
-                print("이게 진짜 성공")
+//                print("이게 진짜 성공")
                 print(data)
-                guard let data = data as? LoginResponse else { return }
+                guard let data = data as? LoginData else { return }
                 print(data)
-                self.alert(message: data.message)
+                self.alert(message: "\(data.name)님 환영합니다!")
             case .requestErr(let err):
                 print(err)
             case .pathErr:

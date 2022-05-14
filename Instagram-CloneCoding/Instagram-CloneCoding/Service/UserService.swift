@@ -1,8 +1,8 @@
 //
 //  UserService.swift
-//  4th-Seminar-re
+//  Instagram-CloneCoding
 //
-//  Created by 정연 on 2022/05/13.
+//  Created by 정연 on 2022/05/14.
 //
 
 import Foundation
@@ -18,7 +18,7 @@ class UserService {
                completion: @escaping (NetworkResult<Any>) -> Void)
     {
         let url = APIConstants.loginURL
-        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body: Parameters = [
             "name": name,
             "email": email,
@@ -30,15 +30,14 @@ class UserService {
                                      parameters: body,
                                      encoding: JSONEncoding.default,
                                      headers: header)
+        
         dataRequest.responseData { response in
             switch response.result {
             case .success:
-                print("네트워크 성공")
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
                 let networkResult = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
-                
             case .failure:
                 completion(.networkFail)
             }
@@ -47,18 +46,18 @@ class UserService {
     
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
-        case 200: return isValidData(data: data)
-        case 409: return .pathErr
+        case 200: return isValiddData(data: data)
+        case 404: return .notFound
+        case 409: return .invalid
         case 500: return .serverErr
         default: return .networkFail
         }
     }
     
-    private func isValidData(data: Data) -> NetworkResult<Any> {
+    private func isValiddData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponse.self, from: data)
         else { return .pathErr }
-        // print(decodedData)
         
         return .success(decodedData.data as Any)
     }
