@@ -13,7 +13,7 @@ class UserService {
     static let shared = UserService()
     private init() {}
     
-    func signup(name: String, email: String, password: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+    func signup(name: String, email: String, password: String, completion: @escaping (NetworkResult<SignupData?>) -> Void) {
         let url = APIConstants.signupURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body: Parameters = [
@@ -33,7 +33,7 @@ class UserService {
                 print("디버그: 통신성공")
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
-                let networkResult = self.judgeSignUpStatus(by: statusCode, value)
+                let networkResult:NetworkResult<SignupData?> = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
             case .failure:
                 print("디버그: 통신실패")
@@ -41,11 +41,11 @@ class UserService {
             }
         }
     }
-    
+
     func login(name: String,
                email: String,
                password: String,
-               completion: @escaping (NetworkResult<Any>) -> Void)
+               completion: @escaping (NetworkResult<LoginData?>) -> Void)
     {
         let url = APIConstants.loginURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
@@ -66,7 +66,7 @@ class UserService {
             case .success:
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
-                let networkResult = self.judgeLoginStatus(by: statusCode, value)
+                let networkResult: NetworkResult<LoginData?> = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
             case .failure:
                 completion(.networkFail)
@@ -74,9 +74,9 @@ class UserService {
         }
     }
     
-    private func judgeSignUpStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+    private func judgeStatus<T: Codable>(by statusCode: Int, _ data: Data) -> NetworkResult<T?> {
         switch statusCode {
-        case 201: return isValidSignUpData(data: data)
+        case 200, 201: return isValidData(data: data)
         case 404: return .notFound
         case 409: return .invalid
         case 500: return .serverErr
@@ -84,29 +84,11 @@ class UserService {
         }
     }
     
-    private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        switch statusCode {
-        case 200: return isValidLoginData(data: data)
-        case 404: return .notFound
-        case 409: return .invalid
-        case 500: return .serverErr
-        default: return .networkFail
-        }
-    }
-    
-    private func isValidSignUpData(data: Data) -> NetworkResult<Any> {
+    private func isValidData<T: Codable>(data: Data) -> NetworkResult<T?> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(SignupResponse.self, from: data)
+        guard let decodedData = try? decoder.decode(ResponseData<T>.self, from: data)
         else { return .pathErr }
         
-        return .success(decodedData.data as Any)
-    }
-    
-    private func isValidLoginData(data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(LoginResponse.self, from: data)
-        else { return .pathErr }
-        
-        return .success(decodedData.data as Any)
+        return .success(decodedData.data)
     }
 }

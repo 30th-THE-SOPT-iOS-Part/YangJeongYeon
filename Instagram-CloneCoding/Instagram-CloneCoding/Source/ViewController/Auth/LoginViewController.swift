@@ -77,7 +77,7 @@ extension LoginViewController {
         UserService.shared.login(name: name, email: email, password: password) { response in
             switch response {
             case .success(let data):
-                guard let data = data as? LoginData else { return }
+                guard let data = data else { return }
                 self.successAlert(name: data.name)
             case .requestErr(_):
                 self.failAlert(errCode: "Request Error")

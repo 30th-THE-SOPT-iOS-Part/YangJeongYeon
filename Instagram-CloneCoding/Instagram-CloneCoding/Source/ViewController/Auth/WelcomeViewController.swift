@@ -66,8 +66,7 @@ extension WelcomeViewController {
         
         UserService.shared.signup(name: name, email: email, password: password) { response in
             switch response {
-            case .success(let data):
-                print("디버그: data = \(data)")
+            case .success(_):
                 self.successAlert(name: name)
             case .requestErr(_):
                 self.failAlert(errCode: "Request Error")
