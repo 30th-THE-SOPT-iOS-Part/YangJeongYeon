@@ -71,7 +71,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     func login() {
         guard let name = usernameTextField.text else { return }
-        let email = "jeong@gmail.com"
+        let email = name + "@gmail.com"
         guard let password = passwordTextField.text else { return }
         
         UserService.shared.login(name: name, email: email, password: password) { response in

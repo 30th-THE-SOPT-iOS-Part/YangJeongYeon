@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: 제너릭 써서 머시기.. 깔끔하게.. 재활용...🗑♻️
 // MARK: Login Data
 struct LoginResponse: Codable {
     let status: Int

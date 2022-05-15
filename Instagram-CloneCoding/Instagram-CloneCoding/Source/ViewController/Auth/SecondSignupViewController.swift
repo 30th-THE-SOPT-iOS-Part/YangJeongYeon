@@ -36,6 +36,7 @@ class SecondSignupViewController: UIViewController {
         guard let welcomeViewController = welcomeStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
         welcomeViewController.username = username
+        welcomeViewController.password = passwordTextField.text
         
         self.present(welcomeViewController, animated: true, completion: nil)
     }
