@@ -15,7 +15,15 @@ struct FeedDataModel {
     let profileName: String
     let contentImageName: String
     var contentImage: UIImage? {
-        return UIImage(named: contentImageName)
+        let url = URL(string: contentImageName)
+        var image : UIImage?
+        
+        do {
+            let data = try Data(contentsOf: url!)
+            return UIImage(data: data)
+        } catch {
+            return nil
+        }
     }
     let likeNumber: Int
     var like: String? {

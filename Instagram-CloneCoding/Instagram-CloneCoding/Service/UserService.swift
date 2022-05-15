@@ -26,7 +26,6 @@ class UserService {
                                      parameters: body,
                                      encoding: JSONEncoding.default,
                                      headers: header)
-        
         dataRequest.responseData { response in
             switch response.result {
             case .success:
@@ -54,7 +53,6 @@ class UserService {
             "email": email,
             "password": password
         ]
-        
         let dataRequest = AF.request(url,
                                      method: .post,
                                      parameters: body,
@@ -88,7 +86,6 @@ class UserService {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(ResponseData<T>.self, from: data)
         else { return .pathErr }
-        
         return .success(decodedData.data)
     }
 }

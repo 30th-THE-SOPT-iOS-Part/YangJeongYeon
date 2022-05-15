@@ -47,7 +47,26 @@ class WelcomeViewController: UIViewController {
                 presentingViewController.popToRootViewController(animated: true)}
         }
         alert.addAction(alertAction)
-        present(alert, animated: true)
+        
+        ImageService.share.getImages() { response in
+            switch response {
+                case .success(let data):
+                    for(var i = 0; i<FeedDataModel.sampleData.count(); i++) {
+                        FeedDataModel.sampleData[i].contentImage = data[i].download_url
+                    }
+                    present(alert, animated: true)
+                case .requestErr(_):
+                    self.failAlert(errCode: "Request Error")
+                case .pathErr:
+                    self.failAlert(errCode: "Path Error")
+                case .serverErr:
+                    self.failAlert(errCode: "Server Error")
+                case .networkFail:
+                    self.failAlert(errCode: "Network Fail Error")
+                default:
+                    self.failAlert(errCode: "Error")
+            }
+        }
     }
     /// 로그인 실패시에 alert 띄우는 메서드
     private func failAlert(errCode: String)

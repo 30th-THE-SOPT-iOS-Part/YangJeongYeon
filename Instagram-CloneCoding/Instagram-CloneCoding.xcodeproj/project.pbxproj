@@ -21,6 +21,8 @@
 		DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */; };
 		DD5177712802DC460039FB86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5177702802DC460039FB86 /* WelcomeViewController.swift */; };
 		DD620688282561A1006307AD /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD620687282561A1006307AD /* FeedDataModel.swift */; };
+		DD7BF5CC28310ABE000AFF8D /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BF5CB28310ABE000AFF8D /* ImageService.swift */; };
+		DD7BF5CE28310AFD000AFF8D /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BF5CD28310AFD000AFF8D /* ImageModel.swift */; };
 		DD94D6C927FFF2000079FB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94D6C827FFF2000079FB81 /* AppDelegate.swift */; };
 		DD94D6CB27FFF2000079FB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94D6CA27FFF2000079FB81 /* SceneDelegate.swift */; };
 		DD94D6D227FFF2010079FB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD94D6D127FFF2010079FB81 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupViewController.swift; sourceTree = "<group>"; };
 		DD5177702802DC460039FB86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DD620687282561A1006307AD /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
+		DD7BF5CB28310ABE000AFF8D /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		DD7BF5CD28310AFD000AFF8D /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		DD94D6C527FFF2000079FB81 /* Instagram-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94D6C827FFF2000079FB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD94D6CA27FFF2000079FB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				DDA8024F282FD0F400306EC4 /* AuthModel.swift */,
+				DD7BF5CD28310AFD000AFF8D /* ImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				DDA80251282FD42000306EC4 /* UserService.swift */,
+				DD7BF5CB28310ABE000AFF8D /* ImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB41086282540CC00B4BB65 /* StoryCollectionViewCell.swift in Sources */,
+				DD7BF5CC28310ABE000AFF8D /* ImageService.swift in Sources */,
 				DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */,
 				DD620688282561A1006307AD /* FeedDataModel.swift in Sources */,
 				DD94D6C927FFF2000079FB81 /* AppDelegate.swift in Sources */,
@@ -459,6 +466,7 @@
 				DDA8024E282FD03300306EC4 /* NetworkResult.swift in Sources */,
 				DDA80250282FD0F400306EC4 /* AuthModel.swift in Sources */,
 				DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */,
+				DD7BF5CE28310AFD000AFF8D /* ImageModel.swift in Sources */,
 				DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */,
 				DDA8024C282FC9FC00306EC4 /* APIConstants.swift in Sources */,
 				DDA80252282FD42000306EC4 /* UserService.swift in Sources */,
