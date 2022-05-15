@@ -29,13 +29,11 @@ class UserService {
         dataRequest.responseData { response in
             switch response.result {
             case .success:
-                print("디버그: 통신성공")
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
                 let networkResult:NetworkResult<SignupData?> = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
             case .failure:
-                print("디버그: 통신실패")
                 completion(.networkFail)
             }
         }
