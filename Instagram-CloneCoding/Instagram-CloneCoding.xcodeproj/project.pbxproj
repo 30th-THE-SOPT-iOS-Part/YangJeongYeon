@@ -16,6 +16,7 @@
 		DD4020E628126883003FABC6 /* ReelsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E528126883003FABC6 /* ReelsTab.storyboard */; };
 		DD4020E82812688A003FABC6 /* ShopTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E72812688A003FABC6 /* ShopTab.storyboard */; };
 		DD4020EA281268B1003FABC6 /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4020E9281268B1003FABC6 /* ProfileTab.storyboard */; };
+		DD43A28D2831E859003983D1 /* URLImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43A28C2831E859003983D1 /* URLImageDownload.swift */; };
 		DD51776B2802DB9D0039FB86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776A2802DB9D0039FB86 /* LoginViewController.swift */; };
 		DD51776D2802DC100039FB86 /* FirstSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */; };
 		DD51776F2802DC300039FB86 /* SecondSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */; };
@@ -52,6 +53,7 @@
 		DD4020E528126883003FABC6 /* ReelsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReelsTab.storyboard; sourceTree = "<group>"; };
 		DD4020E72812688A003FABC6 /* ShopTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopTab.storyboard; sourceTree = "<group>"; };
 		DD4020E9281268B1003FABC6 /* ProfileTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
+		DD43A28C2831E859003983D1 /* URLImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLImageDownload.swift; path = "Instagram-CloneCoding/Model/URLImageDownload.swift"; sourceTree = SOURCE_ROOT; };
 		DD51776A2802DB9D0039FB86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD51776C2802DC100039FB86 /* FirstSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignupViewController.swift; sourceTree = "<group>"; };
 		DD51776E2802DC300039FB86 /* SecondSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		DDA8023A282FC3A800306EC4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DD43A28C2831E859003983D1 /* URLImageDownload.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				DD5177712802DC460039FB86 /* WelcomeViewController.swift in Sources */,
 				DDB410892825424D00B4BB65 /* StoryDataModel.swift in Sources */,
 				DDB4108C2825584400B4BB65 /* FeedTableViewCell.swift in Sources */,
+				DD43A28D2831E859003983D1 /* URLImageDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

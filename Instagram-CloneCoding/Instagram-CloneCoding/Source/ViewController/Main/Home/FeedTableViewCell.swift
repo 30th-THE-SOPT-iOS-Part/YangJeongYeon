@@ -35,7 +35,7 @@ class FeedTableViewCell: UITableViewCell {
     func setData(_ feedData: FeedDataModel) {
         profileImageView.image = feedData.profileImage
         profileNameLabel.text = feedData.profileName
-        contentImageView.image = feedData.contentImage
+        contentImageView.imageDownload(link: "https://picsum.photos/300/300.jpg")
         likesLabel.text = feedData.like
         contentNameLabel.text = feedData.profileName
         contentLabel.text = feedData.content
