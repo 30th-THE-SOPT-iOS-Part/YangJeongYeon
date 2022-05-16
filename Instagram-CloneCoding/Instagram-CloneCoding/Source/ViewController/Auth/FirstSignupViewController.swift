@@ -9,16 +9,17 @@ import UIKit
 
 class FirstSignupViewController: UIViewController {
 
+    // MARK: @IBOutlet
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var nextBtn: UIButton!
     
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureUI()
     }
     
-    // MARK: - UI
+    // MARK: UI
     private func configureUI(){
         nextBtn.isEnabled = false
         usernameTextField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
@@ -26,10 +27,12 @@ class FirstSignupViewController: UIViewController {
         self.navigationController?.navigationBar.topItem?.title = ""
     }
     
+    // MARK: Custom Methods
     @objc func editingChanged(_ textField: UITextField) {
         nextBtn.isEnabled = !(usernameTextField.text?.isEmpty ?? true)
     }
     
+    // MARK: @IBAction
     @IBAction func tapNextBtn(_ sender: Any) {
         let secondSignupStoryboard = UIStoryboard(name: "SecondSignupViewController", bundle: nil)
         guard let secondSigupViewController = secondSignupStoryboard.instantiateViewController(withIdentifier: "SecondSignupViewController") as? SecondSignupViewController else { return }

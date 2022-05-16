@@ -13,7 +13,10 @@ class UserService {
     static let shared = UserService()
     private init() {}
     
-    func signup(name: String, email: String, password: String, completion: @escaping (NetworkResult<SignupData?>) -> Void) {
+    func signup(name: String,
+                email: String,
+                password: String,
+                completion: @escaping (NetworkResult<SignupData?>) -> Void) {
         let url = APIConstants.signupURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body: Parameters = [

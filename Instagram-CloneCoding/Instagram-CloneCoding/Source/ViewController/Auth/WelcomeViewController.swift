@@ -9,16 +9,18 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    // MARK: @IBOutlet
     @IBOutlet weak var welcomeLabel: UILabel!
     var username: String?
     var password: String?
     
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUsername()
     }
 
+    // MARK: @IBAction
     @IBAction func tapFinishBtn(_ sender: Any) {
         signup()
     }
@@ -29,14 +31,7 @@ class WelcomeViewController: UIViewController {
             presentingViewController.popToRootViewController(animated: true)}
     }
     
-    private func setUsername() {
-        if let username = username {
-            welcomeLabel.text = "\(username) 님 Instagram에\n오신 것을 환영합니다"
-            welcomeLabel.sizeToFit()
-        }
-    }
-    
-    // MARK: - Custom Methods
+    // MARK: Custom Methods
     /// 로그인 성공시에 alert 띄우는 메서드
     private func successAlert(name: String)
     {
@@ -56,6 +51,13 @@ class WelcomeViewController: UIViewController {
         let alertAction = UIAlertAction(title: "확인", style: .default, handler: nil)
         alert.addAction(alertAction)
         present(alert, animated: true)
+    }
+    
+    private func setUsername() {
+        if let username = username {
+            welcomeLabel.text = "\(username) 님 Instagram에\n오신 것을 환영합니다"
+            welcomeLabel.sizeToFit()
+        }
     }
 }
 
