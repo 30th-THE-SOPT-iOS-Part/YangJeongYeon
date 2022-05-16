@@ -9,19 +9,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    // MARK: - @IBOutlet
+    // MARK: @IBOutlet
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     
-    // MARK: - LifeCycle
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
     }
     
-    // MARK: - UI
+    // MARK: UI
     private func configureUI(){
         loginBtn.isEnabled = false
 
@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
             }.contains(true)
     }
     
-    // MARK: - @IBAction
+    // MARK: @IBAction
     @IBAction func tapLoginBtn(_ sender: Any) {
         login()
     }
@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(firstSigupViewController, animated: true)
     }
     
-    // MARK: - Custom Methods
+    // MARK: Custom Methods
     /// 로그인 성공시에 alert 띄우는 메서드
     private func successAlert(name: String)
     {

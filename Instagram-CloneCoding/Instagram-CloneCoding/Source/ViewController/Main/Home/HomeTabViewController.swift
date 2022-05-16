@@ -8,17 +8,16 @@
 import UIKit
 
 class HomeTabViewController: UIViewController {
+    // MARK: @IBOutlet
     @IBOutlet weak var storyCollectionView: UICollectionView!
     @IBOutlet weak var feedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureUI()
     }
     
-    // 요거 다 configureUI 안에 넣어도 되나요? 분리가 필요하다면 어떤 이름의 함수에다가 분리하는게 좋을까요??
-    // MARK: - UI
+    // MARK: UI
     private func configureUI(){
         let storyNib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
         storyCollectionView.register(storyNib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
@@ -38,6 +37,7 @@ extension HomeTabViewController: UICollectionViewDelegate {
     
 }
 
+// MARK: - UI
 extension HomeTabViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return StoryDataModel.sampleData.count
