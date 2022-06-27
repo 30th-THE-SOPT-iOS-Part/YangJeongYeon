@@ -58,7 +58,7 @@ class UserService {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponse.self, from: data)
         else { return .pathErr }
-        print(decodedData)
+        // print(decodedData)
         
         return .success(decodedData.data as Any)
     }
