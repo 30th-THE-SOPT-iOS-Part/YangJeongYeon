@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kqH-vf-eTx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kqH-vf-eTx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="mrN-xh-CDM">
-                                <rect key="frame" x="16" y="210" width="382" height="312"/>
+                                <rect key="frame" x="35.5" y="210" width="343" height="312"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagram Black Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AoC-NN-wim">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="28" trailing="8"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dof-z0-Ncm">
-                                        <rect key="frame" x="0.0" y="84" width="382" height="150"/>
+                                        <rect key="frame" x="0.0" y="84" width="343" height="150"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="fWZ-B7-0oI">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                                 <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="b1N-jS-cFm"/>
@@ -37,7 +37,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="B6q-K2-e0x">
-                                                <rect key="frame" x="0.0" y="60" width="382" height="44"/>
+                                                <rect key="frame" x="0.0" y="60" width="343" height="44"/>
                                                 <color key="backgroundColor" red="0.97214701439999995" green="0.97556405660000001" blue="0.98581518310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="GAg-Us-hgx"/>
@@ -47,7 +47,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-Co-dfp">
-                                                <rect key="frame" x="0.0" y="120" width="382" height="30"/>
+                                                <rect key="frame" x="0.0" y="120" width="343" height="30"/>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="28.5" right="8"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="비밀번호를 잊으셨나요?">
@@ -55,9 +55,14 @@
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="B6q-K2-e0x" firstAttribute="centerX" secondItem="dof-z0-Ncm" secondAttribute="centerX" id="2xF-X6-Yt7"/>
+                                            <constraint firstItem="fWZ-B7-0oI" firstAttribute="centerX" secondItem="dof-z0-Ncm" secondAttribute="centerX" id="7ry-tW-GRb"/>
+                                            <constraint firstItem="jrn-Co-dfp" firstAttribute="centerX" secondItem="dof-z0-Ncm" secondAttribute="centerX" id="Qnc-kY-8yZ"/>
+                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-ox-EZ8">
-                                        <rect key="frame" x="0.0" y="268" width="382" height="44"/>
+                                        <rect key="frame" x="0.0" y="268" width="343" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="sYK-iS-zy6"/>
                                             <constraint firstAttribute="height" constant="44" id="ugo-0E-G2p"/>
@@ -71,6 +76,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AoC-NN-wim" firstAttribute="centerX" secondItem="mrN-xh-CDM" secondAttribute="centerX" id="Hkb-sI-OG5"/>
+                                    <constraint firstItem="dof-z0-Ncm" firstAttribute="centerX" secondItem="mrN-xh-CDM" secondAttribute="centerX" id="cSI-Nh-cau"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-eQ-TeB">
@@ -100,10 +106,9 @@
                         <constraints>
                             <constraint firstItem="mrN-xh-CDM" firstAttribute="top" secondItem="k18-pJ-lcj" secondAttribute="top" constant="122" id="NTs-cK-gUG"/>
                             <constraint firstItem="8cx-eQ-TeB" firstAttribute="top" secondItem="mrN-xh-CDM" secondAttribute="bottom" constant="37.5" id="NpG-Qq-fzy"/>
+                            <constraint firstItem="mrN-xh-CDM" firstAttribute="centerX" secondItem="Nvn-FB-L50" secondAttribute="centerX" id="Rf2-rh-lTU"/>
                             <constraint firstItem="8cx-eQ-TeB" firstAttribute="centerX" secondItem="Nvn-FB-L50" secondAttribute="centerX" id="dqT-kg-MaX"/>
                             <constraint firstItem="mrN-xh-CDM" firstAttribute="centerX" secondItem="Nvn-FB-L50" secondAttribute="centerX" id="hpk-uA-peS"/>
-                            <constraint firstItem="mrN-xh-CDM" firstAttribute="leading" secondItem="k18-pJ-lcj" secondAttribute="leading" constant="16" id="tQe-35-jq9"/>
-                            <constraint firstItem="k18-pJ-lcj" firstAttribute="trailing" secondItem="mrN-xh-CDM" secondAttribute="trailing" constant="16" id="uad-Md-DHD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b1U-FK-2l3"/>

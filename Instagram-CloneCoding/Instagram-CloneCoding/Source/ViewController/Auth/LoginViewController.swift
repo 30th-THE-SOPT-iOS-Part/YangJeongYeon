@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
+    var eyeBtn = UIButton(type: .custom)
     
     // MARK: LifeCycle
     override func viewDidLoad() {
@@ -32,6 +33,16 @@ class LoginViewController: UIViewController {
         loginBtn.isEnabled = ![usernameTextField, passwordTextField].compactMap {
                 $0.text?.isEmpty
             }.contains(true)
+    }
+    
+    private func configEyeBtn() {
+        eyeBtn = UIButton.init(primaryAction: UIAction(handler: { [self]_ in
+            passwordTextField.isSecureTextEntry.toggle()
+            self.eyeBtn.isSelected.toggle()
+        }))
+        
+        var btnConfiguration = UIButton.Configuration.plain()
+        
     }
     
     // MARK: @IBAction
